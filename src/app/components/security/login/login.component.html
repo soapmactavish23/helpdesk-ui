@@ -1,1 +1,28 @@
-<p>login works!</p>
+<div align="center" class="card-login">
+    <p-card header="Help Desk" [style]="{width: '680px'}" styleClass="p-card-shadow">
+        <div class="card text-left">
+            <div class="p-fluid">
+                <div class="p-field">
+                    <label for="email">E-mail</label>
+                    <span class="p-input-icon-left">
+                        <i class="pi pi-user"></i>
+                        <input id="email" type="email" pInputText placeholder="Type your e-mail"
+                            [(ngModel)]="user.email">
+                    </span>
+                </div>
+                <br>
+                <div class="p-field">
+                    <label for="password">Password</label>
+                    <span class="p-input-icon-left">
+                        <i class="pi pi-lock"></i>
+                        <input id="password" type="pawword" pInputText placeholder="Type your password"
+                            [(ngModel)]="user.password" />
+                    </span>
+                </div>
+            </div>
+        </div>
+        <ng-template pTemplate="footer">
+            <p-button label="Sign In" icon="pi pi-check"></p-button>
+        </ng-template>
+    </p-card>
+</div>

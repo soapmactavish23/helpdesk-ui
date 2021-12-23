@@ -10,6 +10,10 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { HomeComponent } from './components/home/home.component';
 import { LoginComponent } from './components/security/login/login.component';
 import { routes } from './app.routes';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
+import {CardModule} from 'primeng/card';
+import {InputTextModule} from 'primeng/inputtext';
 
 @NgModule({
   declarations: [
@@ -21,11 +25,15 @@ import { routes } from './app.routes';
   imports: [
     routes,
     BrowserModule,
+    HttpClientModule,
+    FormsModule,
     AppRoutingModule,
     ButtonModule,
     MenubarModule,
     MenuModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    InputTextModule,
+    CardModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
